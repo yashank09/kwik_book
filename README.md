@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Welcome to Kwik Book
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+View and Book the best flights around the world
 
-## Available Scripts
+Made using React.js
 
-In the project directory, you can run:
+## Building
 
-### `yarn start`
+`cd ./kwik_books`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`yarn`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`yarn start`
 
-### `yarn test`
+## Thought Process
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- I decided to isolate Form component, Date-Input and Suggestion components to make the app maintainable
 
-### `yarn build`
+- I also isolated `api` calls in an independent file to seperate concerns
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Currently all state is local and shared to it's children; this can be moved to a global state using Context if needed
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Styling of the components has not been thought much. I have extensive experience with CSS and Material design for further customizations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Since no flights are available from the `api` due to COVID restrictions, I could not focus too much on the design of the flight cards. The logic however is completely satisfied
 
-### `yarn eject`
+- Lastly, I'm still getting better at testing react apps. I understand how we render screens, do actions and assert the result during automated testing. I have made sure my components are easily testable and scalable
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Thanks for your time! The site is available [here](https://kwik-book.netlify.app)
